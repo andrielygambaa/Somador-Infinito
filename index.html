@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador Infinito - Exercício 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <header>
+            <h1>Somador <span>Infinito</span></h1>
+            <p>Gerencie sua lista de valores abaixo</p>
+        </header>
+
+        <section class="input-section">
+            <input type="number" id="numInput" placeholder="00">
+            <button class="btn-primary" onclick="adicionar()">Adicionar</button>
+        </section>
+
+        <section class="display-section">
+            <div class="label">Valores na lista:</div>
+            <div class="array-view" id="listaTexto">Nenhum número adicionado</div>
+        </section>
+
+        <section class="actions">
+            <button class="btn-outline" onclick="gerarRelatorio()">Gerar Relatório de Soma</button>
+            
+            <div class="result-container">
+                <small>Resultado Total</small>
+                <h2 id="resultado">0</h2>
+            </div>
+
+            <button class="btn-link" onclick="limparTudo()">Limpar Tudo</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
